@@ -149,3 +149,8 @@ A model may be perfectly capable of:
 That says nothing about whether it should be permitted to do so.
 
 ---
+
+Licensed under CC BY 4.0.
+Attribution appreciated.
+
+---
