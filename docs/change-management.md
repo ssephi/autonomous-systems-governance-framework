@@ -1,9 +1,8 @@
 # Change Management
 
 > **Document:** Change Management  
-> **Version:** 0.1  
 > **Status:** Draft  
-> **Last Reviewed:** 2026-06-06  
+> **Last Reviewed:** 2026-06-17  
 > **Author:** Gary Titchmarsh  
 > **Maintainer:** Gary Titchmarsh  
 > **Applies To:** Autonomous Systems  
@@ -187,6 +186,10 @@ Assessment should consider:
 
 The level of approval should reflect assessed risk.
 
+Risk classification should be determined independently of change classification.
+
+A Standard Change may still require elevated governance controls where the affected systems, data, or permissions result in a higher risk classification.
+
 ---
 
 # Impact Assessment
@@ -208,13 +211,16 @@ The change should be escalated for review.
 
 Approval requirements should follow approval-model.md.
 
+Change classification and risk classification are independent assessments.
+
+Approval requirements should be determined using governance-matrix.md.
+
 Examples:
 
 | Change Type | Typical Approval |
 |-------------|------------------|
 | Standard Change | Pre-approved |
-| Normal Change | Single Approval |
-| High Risk Change | Multiple Approvals |
+| Normal Change | Risk-Based Approval |
 | Emergency Change | Emergency Approval Process |
 
 Approval records must be retained.

@@ -1,5 +1,7 @@
 # Running Autonomous Systems in Production
 
+A governance framework for operating autonomous systems safely in production environments.
+
 ## Introduction
 
 This repository provides a practical framework for operating autonomous systems within production environments.
@@ -12,6 +14,46 @@ The principles described here have been derived from real-world operation of clo
 
 ---
 
+## How to Read This Framework
+
+This framework is intended to be read in layers.
+
+Recommended reading order:
+
+1. Governance Model
+2. Governance Matrix
+3. Risk Model
+4. Access Model
+5. Approval Model
+
+The remaining documents provide operational, security, and assurance controls that support the governance model.
+
+Organisations adopting the framework should begin with governance requirements before implementing operational controls.
+
+---
+
+## Framework Structure
+
+The framework is organised into five layers:
+
+1. Principles
+2. Governance Controls
+3. Operational Controls
+4. Security Controls
+5. Assurance Controls
+
+Governance requirements determine what is permitted.
+
+Operational controls determine how activities occur.
+
+Security controls define protective constraints.
+
+Assurance controls demonstrate accountability and effectiveness.
+
+The Governance Matrix provides the authoritative relationship between governance classifications used throughout the framework.
+
+---
+
 ## Framework Documentation
 
 The following documents provide detailed requirements for each area of the framework.
@@ -19,6 +61,7 @@ The following documents provide detailed requirements for each area of the frame
 | Document | Description |
 |----------|-------------|
 | [Governance Model](docs/governance-model.md) | Overarching governance structure and authority hierarchy |
+| [Governance Matrix](docs/governance-matrix.md) | Mapping between risk, access, approvals, and oversight |
 | [Risk Model](docs/risk-model.md) | Risk identification, assessment, and treatment |
 | [Access Model](docs/access-model.md) | Access levels and permitted actions |
 | [Approval Model](docs/approval-model.md) | When and how approvals must be obtained |
@@ -137,8 +180,6 @@ It must request clarification or human intervention.
 
 Just because a system can perform an action does not mean it should be allowed to perform that action.
 
-That single sentence captures a huge amount of the current AI debate.
-
 A model may be perfectly capable of:
 
 - Deploying to production
@@ -147,6 +188,18 @@ A model may be perfectly capable of:
 - Reading customer data
 
 That says nothing about whether it should be permitted to do so.
+
+---
+
+## Framework Status
+
+Current Version: v0.1.2
+
+Status: Draft
+
+This framework is under active development.
+
+Feedback, discussion, and contributions are encouraged.
 
 ---
 

@@ -1,9 +1,8 @@
 # Approval Model
 
 > **Document:** Approval Model  
-> **Version:** 0.1  
 > **Status:** Draft  
-> **Last Reviewed:** 2026-06-06  
+> **Last Reviewed:** 2026-06-17  
 > **Author:** Gary Titchmarsh  
 > **Maintainer:** Gary Titchmarsh  
 > **Applies To:** Autonomous Systems  
@@ -31,9 +30,11 @@ This document applies to:
 
 # Core Principle
 
-Approval is a mechanism for accepting risk.
+Approval is a mechanism for authorising actions.
 
 Approval is not a mechanism for increasing trust.
+
+Approval and risk acceptance are related but distinct governance activities.
 
 A trusted autonomous system may still require approval.
 
@@ -110,7 +111,13 @@ Examples:
 
 ### Approval
 
-Approved through documented policy
+Approved through documented policy.
+
+The approval of that policy should remain independent from the execution of actions performed under it.
+
+Pre-approval through documented policy satisfies the Approval Independence requirement provided the policy is approved by an authority defined in governance-matrix.md and applies only to a defined class of repeatable, low-risk, reversible actions.
+
+Autonomous execution under an approved policy does not constitute self-approval.
 
 ### Audit
 
@@ -379,8 +386,12 @@ The objective is proportionality rather than bureaucracy.
 
 # Final Principle
 
-Approval is the formal acceptance of risk by an authorised party.
+Approval authorises an action, change, or activity to proceed.
+
+Approval does not necessarily constitute acceptance of residual risk.
 
 Autonomous systems may identify, analyse, and recommend actions.
 
-The decision to accept risk remains a human responsibility.
+The decision to approve an action remains a human responsibility.
+
+Risk acceptance authority should follow governance-matrix.md.

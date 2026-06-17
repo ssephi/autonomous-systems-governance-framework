@@ -1,9 +1,8 @@
 # Governance Model
 
 > **Document:** Governance Model  
-> **Version:** 0.1  
 > **Status:** Draft  
-> **Last Reviewed:** 2026-06-06  
+> **Last Reviewed:** 2026-06-17  
 > **Author:** Gary Titchmarsh  
 > **Maintainer:** Gary Titchmarsh  
 > **Applies To:** Autonomous Systems  
@@ -129,6 +128,21 @@ The governance framework exists to ensure:
 
 ---
 
+## Governance Relationships
+
+The Governance Matrix provides the authoritative relationship between:
+
+- Risk Classification
+- Access Levels
+- Approval Categories
+- Audit Requirements
+- Review Frequencies
+- Governance Authorities
+
+Where governance classifications overlap or conflict, governance-matrix.md takes precedence.
+
+---
+
 # Review Cadence
 
 Unless otherwise specified, governance controls should be reviewed:
@@ -163,10 +177,11 @@ These principles should guide interpretation of all other documents.
 
 ## Layer 2 - Governance Controls
 
-Defines organisational requirements.
+Defines governance requirements, accountability models, and control relationships.
 
 Examples:
 
+- governance-matrix.md
 - access-model.md
 - approval-model.md
 - risk-model.md
@@ -174,7 +189,7 @@ Examples:
 - agent-lifecycle.md
 - multi-agent-governance.md
 
-These documents define what is permitted, who is accountable, and how autonomous systems are governed throughout their operational life.
+These documents define what is permitted, who is accountable, how governance controls interact, and how autonomous systems are governed throughout their operational life.
 
 ---
 
@@ -258,13 +273,14 @@ How does this system work?
 
 Responsible for:
 
-- Risk assessment
-- Risk treatment
+- Risk ownership
+- Risk review
+- Risk treatment oversight
 - Risk acceptance recommendations
 
 Questions answered:
 
-What could go wrong?
+Who owns this risk?
 
 ---
 
@@ -282,9 +298,37 @@ Are controls adequate?
 
 ---
 
+## Executive Authority
+
+Responsible for:
+
+- Critical risk acceptance
+- Significant governance exceptions
+- Approval of exceptional access
+- Resolution of governance disputes
+
+Questions answered:
+
+Is the organisation prepared to accept this risk?
+
+Executive Authority refers to the organisational role authorised to accept Critical risk.
+
+Examples may include:
+
+- CTO
+- CIO
+- CISO
+- CRO
+- Risk Committee
+- Board Delegate
+
+The organisation should explicitly define Executive Authority.
+
+---
+
 # Risk Acceptance
 
-Risk acceptance should be performed by authorised individuals.
+Risk acceptance authority should follow governance-matrix.md.
 
 Autonomous systems must not:
 
@@ -298,7 +342,7 @@ Risk acceptance remains a human responsibility.
 
 # Exceptions Management
 
-Exceptions may be granted where justified.
+Exception authority should follow governance-matrix.md.
 
 Examples:
 
@@ -315,6 +359,22 @@ Exceptions should:
 - Be reviewed
 
 Permanent exceptions should be avoided.
+
+---
+
+# Emergency Governance
+
+Emergency actions may bypass standard approval processes where immediate action is required to prevent material harm.
+
+Emergency authority should follow governance-matrix.md.
+
+All emergency actions should be:
+
+- Documented
+- Audited
+- Reviewed retrospectively
+
+Emergency authority should not become routine authority.
 
 ---
 

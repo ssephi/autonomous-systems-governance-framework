@@ -1,7 +1,6 @@
 # Multi-Agent Governance
 
 > **Document:** Multi-Agent Governance  
-> **Version:** 0.1  
 > **Status:** Draft  
 > **Last Reviewed:** 2026-06-06  
 > **Author:** Gary Titchmarsh  
@@ -362,7 +361,7 @@ The content remains external in origin.
 
 Propagation does not create trust.
 
-Prompt-security.md remains applicable throughout the chain.
+prompt-security.md remains applicable throughout the chain.
 
 ---
 

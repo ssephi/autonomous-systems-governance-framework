@@ -1,9 +1,8 @@
 # Access Model
 
 > **Document:** Access Model  
-> **Version:** 0.1  
 > **Status:** Draft  
-> **Last Reviewed:** 2026-06-06  
+> **Last Reviewed:** 2026-06-17  
 > **Author:** Gary Titchmarsh  
 > **Maintainer:** Gary Titchmarsh  
 > **Applies To:** Autonomous Systems  
@@ -258,6 +257,36 @@ A system may be Level 3 for one category and Level 1 for another.
 
 ---
 
+## Category-Specific Limits
+
+The access levels defined in this document represent capability levels.
+
+Individual access categories may impose more restrictive limits than those defined by governance-matrix.md.
+
+Where multiple limits apply, the most restrictive limit should be used.
+
+Examples:
+
+Critical Risk Classification
+
+↓
+
+Governance Matrix Maximum: Level 4
+
+↓
+
+Identity Systems Preferred Maximum: Level 2
+
+↓
+
+Effective Maximum: Level 2
+
+Different resource categories present different levels of risk.
+
+Category-specific limits may therefore be more restrictive than governance-level limits.
+
+---
+
 ## Cloud Platforms
 
 Examples:
@@ -266,7 +295,7 @@ Examples:
 - Azure
 - GCP
 
-Preferred Maximum Level:
+Category Maximum Level:
 
 Level 2
 
@@ -291,7 +320,7 @@ Examples:
 - GitLab
 - Bitbucket
 
-Preferred Maximum Level:
+Category Maximum Level:
 
 Level 3
 
@@ -317,7 +346,7 @@ Examples:
 - Grafana
 - CloudWatch
 
-Preferred Maximum Level:
+Category Maximum Level:
 
 Level 4
 
@@ -333,7 +362,7 @@ Examples:
 - AWS Secrets Manager
 - Azure Key Vault
 
-Preferred Maximum Level:
+Category Maximum Level:
 
 Level 0
 
@@ -357,7 +386,7 @@ Examples:
 - IAM Identity Center
 - Okta
 
-Preferred Maximum Level:
+Category Maximum Level:
 
 Level 2
 

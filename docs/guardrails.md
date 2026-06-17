@@ -1,7 +1,6 @@
 # Guardrails
 
 > **Document:** Guardrails  
-> **Version:** 0.1  
 > **Status:** Draft  
 > **Last Reviewed:** 2026-06-06  
 > **Author:** Gary Titchmarsh  
